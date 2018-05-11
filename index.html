@@ -16,6 +16,8 @@
     
     <script>
         //Page Constructions
+        var timeline = [];
+        
         var welcome = {
             type: "html-keyboard-response",
             stimulus: "Welcome to the Experiment. Please press any key to continue."
@@ -60,7 +62,8 @@
         
         var test_procedure = {
             timeline: [fixation, test],
-            timeline_variables: test_stimuli
+            timeline_variables: test_stimuli,
+            randomize_order: true
         }
         
         //Construct Timeline
